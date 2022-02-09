@@ -128,7 +128,7 @@ namespace ConsoleApp_TAR
             {
                 Console.WriteLine("Viga");
             }
-            */
+            
 
             Console.WriteLine("Sinu pikkus?");
             double height = double.Parse(Console.ReadLine());
@@ -169,9 +169,12 @@ namespace ConsoleApp_TAR
             {
                 Console.WriteLine("Viga");
             }
+            */
 
 
 
+
+            
 
 
             Console.ReadKey();
