@@ -99,7 +99,7 @@ namespace ConsoleApp_TAR
             {
                 Console.WriteLine("Teil ei ole pinginaabri :)");
             }
-            */
+            
 
             Console.WriteLine("Sisestage põranda pindala!");
             int a = int.Parse(Console.ReadLine());
@@ -128,9 +128,47 @@ namespace ConsoleApp_TAR
             {
                 Console.WriteLine("Viga");
             }
+            */
 
+            Console.WriteLine("Sinu pikkus?");
+            double height = double.Parse(Console.ReadLine());
+            if (height < 170 && height > 0)
+            {
+                Console.WriteLine("Vaike");
+            }
+            else if (height > 185 && height < 300)
+            {
+                Console.WriteLine("Suur");
+            }
+            else if (height >= 170 && height <= 185)
+            {
+                Console.WriteLine("Keskmine");
+            }
+            else
+            {
+                Console.WriteLine("Viga");
+            }
 
-
+            Console.WriteLine("Sinu pikkus?");
+            double height1 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Sinu sugu?");
+            string sugu = Console.ReadLine();
+            if (height1 < 170 && height1 > 0)
+            {
+                Console.WriteLine("Vaike");
+            }
+            else if (height1 > 185 && height1 < 300)
+            {
+                Console.WriteLine("Suur");
+            }
+            else if (height1 >= 170 && height1 <= 185)
+            {
+                Console.WriteLine("Keskmine");
+            }
+            else
+            {
+                Console.WriteLine("Viga");
+            }
 
 
 
