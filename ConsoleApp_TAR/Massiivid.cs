@@ -10,19 +10,16 @@ namespace ConsoleApp_TAR
     {
         static void Main(string[] args)
         {
-            /*
-            Random rnd = new Random();
-            int[] arvud = new int[10];
-            for (int i = 0; i < arvud.Length; i++)
-            {
-                arvud[i] = rnd.Next(1, 100);
-            }
-            foreach (int arv in arvud)
-            {
-                Console.Write($" {arv,4} ");
-            }
-            
+            //int q = 10;
+            //int korrutis = funksioonid.Korrustamine(q, 5);
+            //Console.WriteLine(korrutis);
 
+
+            //Array arvud;
+            //arvud = funksioonid.Arvud_Massiviisse(10, false);
+            //funksioonid.Arvud_Ekraanile(arvud);
+
+            /*
             string[] nimed = new string[5] {"Anna","Olga","Mark","Timur","Jegor"} ;
             int a=0;
             do
@@ -59,7 +56,7 @@ namespace ConsoleApp_TAR
                 NM[j-N] = j;
                 Console.WriteLine(j*j);
             }
-            */
+            
 
             int[] arvud = new int[5];
             for (int i = 0; i < 5; i++)
@@ -67,17 +64,89 @@ namespace ConsoleApp_TAR
                 Console.WriteLine("Sisesta arv (5 korda)");
                 arvud[i] = int.Parse(Console.ReadLine());
             }
+            int summa = 0;
+            int korrutis = 1;
+
             foreach (var arv in arvud)
             {
-                Console.WriteLine($" {arv+4} ");
-                Console.WriteLine($" {arv/arv} ");
-                Console.WriteLine($" {arv*arv} ");
+                summa += arv;
+                korrutis *= arv; 
             }
+            Console.WriteLine($"Summa -> {summa} ");
+            Console.WriteLine($"Korrutis -> {korrutis} ");
+            Console.WriteLine($"Keskmine -> {summa/arvud.Length,4} ");
+            
 
 
 
 
+            
+            Console.WriteLine("Osta Elevant ara!!");
+            string loom = Console.ReadLine();
+            if (loom.ToUpper() != "elevant")
+            {
+                Console.WriteLine("Koik utlevad ostan " + loom + " aga sa osta!");
+                Console.ReadLine();
+            }
+            Console.WriteLine("Elevant on sinu!");
+            Console.ReadLine();
+            
+
+            
+            Random rand = new Random();
+            int i = rand.Next(10);
+            int count = 1;
+            Console.WriteLine("Arvuti arvas ara arvu vahemikus 0 kuni 9, proovige ara arvata!");
+            Console.WriteLine("Sisetage arv:");
+            int k = Convert.ToInt32(Console.ReadLine());
+            while (count <= 3)
+            {
+                if (i == k)
+                {
+                    Console.WriteLine("Teie vastus on oige! Arvuti arvutas " + k + "!");
+                    break;
+                }
+                else
+                {
+                    count++;
+                    if (count == 4)
+                    {
+                        Console.WriteLine("Sinu vastus on vale!. Arvuti arvutas " + i + "!");
+                        break;
+                    }
+                    Console.WriteLine("Ei, see ei ole arv " + k + "! Katse " + count + ":");
+                    k = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+            Console.ReadLine();
+            
+            
+            for (int b = 1; b < 11; b++)
+            {
+                for (int j = 1; j < 11; j++)
+                {
+                    Console.Write((b * j).ToString() + "\t");
+                }
+                Console.WriteLine();
+            
+
+            Array massiiv4;
+            massiiv4 = funksioonid.Arvud_Massiviisse(4, true);
+
+                Array.Sort(massiiv4); // 1,2...
+                int D = 0;
+                for (int t = 0; t < massiiv4.Length; t++)
+                {
+                    D =(int)(D + massiiv4 * Math.Pow(10, t));
+                }
+                Console.WriteLine(D);
+             */
+
+
+            funksioonid.Leidmine_Kesk(5);
             Console.ReadKey();
+            
+            
         }
     }
 }
