@@ -103,7 +103,10 @@ namespace ConsoleApp_TAR
             {
 				res = a / b;
             }
-            Console.WriteLine()
+	    string k = nurr
+	    ress = res * k
+	    return ress
+            Console.WriteLine(ress);
         
     }
 }
