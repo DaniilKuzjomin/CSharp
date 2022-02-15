@@ -82,6 +82,7 @@ namespace ConsoleApp_TAR
 
         }
         
+	public static float Calculator()
         {
 			double a;
 			double b;
