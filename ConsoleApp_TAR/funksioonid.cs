@@ -72,27 +72,20 @@ namespace ConsoleApp_TAR
             }
             kesk = Math.Round( kesk/n,4);
             return (int)kesk;
-        }
-        public static int Kassi_kalc(int a1, int a2)
-        {
-            Console.WriteLine("Sisestage 1 arv:");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Sisestage 2 arv:");
-            int b = int.Parse(Console.ReadLine());
 
         }
         
-	public static float Calculator()
+	public static float kassi_calc()
         {
 			double a;
 			double b;
 			double res;
 			char z;
-			Console.WriteLine("Write first number");
+			Console.WriteLine("Sisetage esimene arv");
 			a = Convert.ToDouble(Console.ReadLine());
-			Console.WriteLine("Write second number");
+			Console.WriteLine("Sisetage kahe arv");
 			b = Convert.ToDouble(Console.ReadLine());
-			Console.WriteLine("Enter an action");
+			Console.WriteLine("Sisetage mark");
 			znak = Convert.ToChar(Console.ReadLine());
 			if (z == '+')
 			{
