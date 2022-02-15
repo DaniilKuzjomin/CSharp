@@ -107,6 +107,13 @@ namespace ConsoleApp_TAR
 	    ress = res * k
 	    return ress
             Console.WriteLine(ress);
-        
+		
+        public static float stars()
+	{
+		Console.WriteLine("Sisetage kui palju tarni Sa tahad -> ");
+		a = Convert.ToInt(Console.ReadLine());
+		tarn = a * "*"
+		Console.WriteLine(tarn);
+	}
     }
 }
