@@ -82,5 +82,34 @@ namespace ConsoleApp_TAR
 
         }
         
+        {
+			double a;
+			double b;
+			double res;
+			char z;
+			Console.WriteLine("Write first number");
+			a = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Write second number");
+			b = Convert.ToDouble(Console.ReadLine());
+			Console.WriteLine("Enter an action");
+			znak = Convert.ToChar(Console.ReadLine());
+			if (z == '+')
+			{
+				res = a + b;
+			}
+			if (z=='-')
+            {
+				res = a - b;
+			}
+			if (z == '*')
+            {
+				res = a * b;
+            }
+			if (z == '/')
+            {
+				res = a / b;
+            }
+            Console.WriteLine()
+        
     }
 }
